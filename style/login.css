@@ -1,0 +1,10 @@
+body {
+    background-color: #181818;
+}
+
+.telaLogin {
+    margin-top: 10%; 
+    background-color: #A00000; 
+    padding: 50px; 
+    border-radius: 40px;
+}
