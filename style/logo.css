@@ -1,0 +1,8 @@
+.logo-ifood {
+    position: fixed; /* Fixa a logo na posição definida, independentemente do scroll */
+    top: 10px; /* Distância da logo para o topo da página */
+    right: 10px; /* Distância da logo para a direita da página */
+    width: 100px; /* Define uma largura para a logo (ajuste conforme necessário) */
+    height: auto; /* Mantém a proporção original da imagem */
+    z-index: 1000; /* Garante que a logo fique sobreposta a outros elementos */
+}

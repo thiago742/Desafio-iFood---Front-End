@@ -12,25 +12,46 @@
     
 </head>
 <body>
-
-    <div class="container">
-        <div class="telaLogin row d-flex justify-content-center">
-            <div class="login col-5">
-                <h1>Fazer Cadastro</h1>
+    <img class="logo-ifood" src="../img/ifood.png">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="telaLogin row">
+            <div class="login col-12 col-md-6 text-light">
+                <h1 class="text-center md-mt-5 md-pb-5">Fazer Cadastro</h1>
                 <form>
-                    <div class="mb-3">
-                        <label for="email" class="form-label fw-bold text-colored">E-mail</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="senha" class="form-label fw-bold text-colored">Senha</label>
-                        <input type="tel" id="telefone" class="form-control">
+                    <div class="scroll-container">
+                        <div class="mb-2 ms-4">
+                            <label for="nome-empresa" class="form-label fw-bold text-colored">Nome da Empresa/Usuário</label>
+                            <input type="text" id="nome-empresa" class="form-control" required>
+                        </div>
+                        <div class="mb-2 ms-4">
+                            <label for="cpf-cnpj" class="form-label fw-bold text-colored">CNPJ/CPF</label>
+                            <input type="text" id="cpf-cnpj" class="form-control" required>
+                        </div>
+                        <div class="mb-2 ms-4">
+                            <label for="email" class="form-label fw-bold text-colored">E-mail</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="mb-2 ms-4">
+                            <label for="telefone" class="form-label fw-bold text-colored">Telefone</label>
+                            <input type="tel" id="telefone" class="form-control" required>
+                        </div>
+                        <div class="mb-2 ms-4">
+                            <label for="senha" class="form-label fw-bold text-colored">Senha</label>
+                            <input type="password" id="senha" class="form-control" required>
+                        </div>
+                        <div class="mb-2 ms-4">
+                            <label for="confirmar-senha" class="form-label fw-bold text-colored">Confirmar Senha</label>
+                            <input type="password" id="confirmar-senha" class="form-control" required>
+                        </div>
                     </div>
                 </form>
+                <div class="d-flex justify-content-center">
+                    <button class="botao-login mt-5">Criar Conta</button>
+                </div>
             </div>
-            <div class="textoDireita col-5 p">
-                <h1>Gestão Financeira para seu negócio.</h1>
-                <a href="./login.html">já possui conta? faça o login.</a>
+            <div class="textoDireita text-light text-center col-12 col-md-6 p-5">
+                <h1 class="pb-5">Gestão Financeira para seu negócio.</h1>
+                <a class="text-light" href="./login.html">Não possui conta? Faça o Login.</a>
             </div>
         </div>
     </div>
