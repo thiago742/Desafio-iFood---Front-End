@@ -1,3 +1,5 @@
+@import url('reset.css');
+
 .logo-ifood {
     position: fixed; /* Fixa a logo na posição definida, independentemente do scroll */
     top: 10px; /* Distância da logo para o topo da página */
