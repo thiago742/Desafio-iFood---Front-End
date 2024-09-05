@@ -7,3 +7,18 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@media (max-width: 767px) {
+
+    body {
+        background-repeat: repeat;
+    }
+
+    .start {
+        margin-top: 600px;
+    }
+
+    .foot {
+        margin-bottom: 24px;
+    }
+}
