@@ -1,5 +1,62 @@
-@import url('reset.css');
-
-.dashboard {
-    width: 80%
+* {
+    font-family: "Poppins", sans-serif;
 }
+
+.dashbrd {
+    margin-top: 30px;
+}
+
+:root {
+    --bg-blue-1: #D02A2A;
+    --bg-blue-2: #f7f7f7;
+    --bg-blue-3: #dc3545;
+    --margin-top: 100px;
+}
+
+.navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    padding-top: 5px;
+}
+
+
+.navbar a {
+    color:#f7f7f7; 
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navbar a:hover {
+    color:#D02A2A;
+    
+}
+
+
+.navbar a {
+    text-decoration: none; 
+}
+
+.meu-botao {
+    margin-left: auto;
+}
+
+.meu-botao button {
+    color: #f7f7f7;
+    font-weight: 300;
+}
+
+.navbar button {
+    color:#f7f7f7;
+    font-weight: 300;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+
+
+
