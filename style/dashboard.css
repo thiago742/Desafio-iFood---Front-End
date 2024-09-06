@@ -1,9 +1,15 @@
+@import url('navbar.css');
+
 * {
     font-family: "Poppins", sans-serif;
 }
 
 .dashbrd {
     margin-top: 30px;
+}
+
+.mbOnly {
+    display: none;
 }
 
 :root {
@@ -14,7 +20,7 @@
 }
 
 .navbar {
-    background-color: black;
+    background-color: #181818;
     position: fixed;
     top: 0;
     width: 100%;
@@ -56,6 +62,41 @@
 .navbar img {
     height: 50px;
 }
+
+.away {
+    padding-left: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #openDatePicker {
+        margin-left: 100px;
+    }
+
+    .img-fluid {
+        display: none;
+    }
+
+    .dashbrd {
+        display: none;
+    }
+
+    .mbOnly {
+        margin-top: 178px;
+        margin-left: 70px;
+        display: block;
+    }
+
+    .nav-link {
+        margin-left: 100px;
+    }
+
+    .nav-item {
+        padding-left: 0;
+    }
+
+  }
+
 
 
 
