@@ -4,7 +4,7 @@
 
 body {
   overflow-x: hidden;
-  background-image: url(../img/ifood-bg-trans\ \(1\).png);
+  background-image: url(../assets/img/ifood-bg-trans\ \(1\).png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -17,16 +17,10 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 20px 0;
+  padding: 30px 0;
+  padding-left: 15px;
   background-color: black;
   color: white;
-}
-
-.header h1 {
-    margin-left: 100px;
-    font-size: 36px;
-    color: white;
 }
 
 .operationBar ul li {
@@ -57,10 +51,6 @@ header {
   }
 
   @media (max-width: 768px) {
-
-    .logo-ifood {
-      display: none;
-    }
 
     .row {
       width: 100%;

@@ -1,3 +1,5 @@
+@import url('logo.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -34,13 +36,11 @@ body {
     margin-left: 20px;
     font-size: 16px;
     cursor: pointer;
-    padding: 10px;
-    display: none;
 }
 
 .top-menu .menu-toggle {
-    display: block; /* O ícone de menu será visível sempre */
-    padding: 10px;
+    display: none; /* O ícone de menu será visível sempre */
+    padding-top: 10px;
     cursor: pointer;
 }
 
@@ -57,8 +57,8 @@ h1 {
     background-color: black;
     color: #fff;
     margin: 0;
-    padding: 20px 0;
-    padding: 15px;
+    padding: 30px 0;
+    padding-left: 15px;
 }
 
 .container {
@@ -206,6 +206,10 @@ h1 {
         grid-template-columns: 1fr;
     }
 
+    .top-menu .menu-toggle {
+        display: block;
+    }
+
     .top-menu {
         padding: 5px 0;
         text-align: center;
@@ -223,10 +227,14 @@ h1 {
     }
 
     .top-menu ul li {
+        margin: 0 auto;
         text-align: center;
-        margin: 0;
+        padding: 8px;
+        display: none;
 
     }
+
+
 
     .filter-items {
         width: 250px;
