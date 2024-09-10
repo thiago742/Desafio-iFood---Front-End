@@ -4,12 +4,21 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+.minhaimagem {
+    margin-left: 70px;
+}
+
 .dashbrd {
     margin-top: 30px;
 }
 
 .mbOnly {
     display: none;
+    margin-left: 70px;
 }
 
 :root {
@@ -20,7 +29,7 @@
 }
 
 .navbar {
-    background-color: #181818;
+    background-color: #000000;
     position: fixed;
     top: 0;
     width: 100%;
@@ -66,6 +75,15 @@
 .away {
     padding-left: 100px;
 }
+
+.date-picker-container {
+    position: relative;
+  }
+  #datePicker {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
 
 @media only screen and (max-width: 600px) {
 

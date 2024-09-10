@@ -1,0 +1,94 @@
+@import url('navbar.css');
+@import url('reset.css');
+@import url('logo.css');
+
+body {
+  overflow-x: hidden;
+  background-image: url(../img/ifood-bg-trans\ \(1\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  margin-left: 70px;
+}
+
+.container {
+  width: 90%;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+}
+
+.header h1 {
+    margin-left: 100px;
+    font-size: 36px;
+    color: white;
+}
+
+.operationBar ul li {
+  background-color: #181818; 
+  border-radius:100px; 
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.table-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  border-radius: 5px; /* Canto levemente arredondado */
+}
+
+.table-container {
+    width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+    position: relative;
+
+  }
+
+  tfoot {
+    font-weight: bold;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+
+    .logo-ifood {
+      display: none;
+    }
+
+    .row {
+      width: 100%;
+    }  
+
+    .container button {
+      margin-bottom: 5px;
+    }
+
+    .operationBar ul li {
+      margin-top: 100px; 
+    }
+  
+    .table-container {
+        margin-left: 15px;
+        height: 300px;
+        width: 100%;
+    }
+
+    table {
+        font-size: 10px; /* Reduz o tamanho da fonte */
+      }
+      th, td {
+        padding: 0.3rem; /* Reduz o espaçamento entre células */
+      }
+
+      #bottom {
+        margin-bottom: 50px;
+      }
+  }
+

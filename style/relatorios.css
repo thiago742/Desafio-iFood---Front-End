@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin-left: 70px;
+    overflow-x: hidden;
+}
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    background-color: #D02A2A;
+    color: white;
+    padding: 10px 20px;
+    transition: ease in .5s;
+}
+
+.top-menu ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.top-menu ul li {
+    margin-left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+.top-menu .menu-toggle {
+    display: block; /* O ícone de menu será visível sempre */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.top-menu ul.expanded li {
+    display: block; /* Mostra os itens quando o menu está expandido */
+}
+
+
+.top-menu ul.expanded li {
+    display: block; /* Mostra os itens quando o menu está expandido */
+}
+
+h1 {
+    background-color: black;
+    color: #fff;
+    margin: 0;
+    padding: 20px 0;
+    padding: 15px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    height: 250px;
+    border: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #D02A2A;
+    text-align: center;
+}
+
+.card p {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card.green p {
+    color: #28a745;
+}
+
+.card.orange p {
+    color: #ff9800;
+}
+
+.card.red p {
+    color: #D02A2A;
+}
+
+.details-button {
+    background-color: #D02A2A;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.details-button:hover {
+    background-color: #990000;
+}
+
+.card {
+    border: 1px solid #ddd;
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #D02A2A;
+}
+
+.details-button {
+    display: block;
+    width: 100%;
+}
+
+.filter-bar {
+    padding: 10px;
+    background-color: #a00000;
+    color: white;
+    width: 100%;
+    position: relative; /* Importante para controlar o z-index */
+    z-index: 1;
+}
+
+.filter-bar h2 {
+    font-size: 18px;
+}
+
+
+.filter-bar span {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.filter-items {
+    display: none; /* Itens de filtro escondidos por padrão */
+    margin-top: 10px;
+    padding-left: 10px;
+    position: absolute; /* Faz com que a lista apareça sobre outros elementos */
+    background-color: rgba(160, 0, 0, 0.8);
+    color: white; /* Coloque um fundo para os itens não se sobreporem visualmente a outros elementos */
+    border: 1px solid #ddd;
+    z-index: 10; /* Garante que os itens da lista estejam no topo */
+    width: 525px;
+    border-radius: 15px; /* Ajuste a largura da lista conforme necessário */
+}
+
+.filter-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filter-items li {
+    text-align: center;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #720000;
+    border-radius: 40px;
+    padding: 4px;
+    width: 500px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .dashboard {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .top-menu {
+        padding: 5px 0;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .top-menu ul {
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        list-style: none;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    .top-menu ul li {
+        text-align: center;
+        margin: 0;
+
+    }
+
+    .filter-items {
+        width: 250px;
+    }
+
+    .filter-items li {
+        width: 220px;
+    }
+}
