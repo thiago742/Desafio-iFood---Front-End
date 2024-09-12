@@ -1,0 +1,247 @@
+
+
+body {
+    background-image: 
+    linear-gradient(#B71818, #510B0B);
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-left: 70px;
+    overflow-y: hidden;
+}
+
+.top-text {
+    padding: 30px 0;
+    background-color: black;
+    color: white;
+    padding-left: 15px;
+    width: 100%;
+}
+
+#container_geral {
+    display: flex;
+    height: 88%;
+}
+
+#botao_pesquisa {
+    margin: 10px 0;
+    margin-left: 30px;
+}
+
+input {
+    border: 2px color(srgb red green blue);
+    border-radius: 5px;
+    height: 25px;
+    width: 150px;
+    margin-right: 30px;
+}
+
+.card-area {
+    overflow-y: scroll;}
+
+.card-area::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Estilo do trilho da barra */
+.card-area::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo do trilho */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo do polegar da barra (parte que rola) */
+.card-area::-webkit-scrollbar-thumb {
+    background-color: #1E509B; /* Cor do polegar */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 2px solid #f1f1f1; /* Espaço ao redor do polegar */
+}
+
+/* Cor quando o polegar está sendo clicado */
+.card-area::-webkit-scrollbar-thumb:hover {
+    background-color: #163d7a; /* Cor mais escura ao passar o mouse */
+}
+
+#container_esq {
+    height: 550px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: black;
+    height: 110px;
+    width: 380px;
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 16px;
+
+}
+
+.card_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_header div {
+    display: flex;
+    align-items:center;
+    gap: 8px;
+}
+
+.contagem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card button {
+    width: 33%;
+    height: 27px;
+    border-radius: 12px;
+    align-self: flex-end;
+    font-size: 13px;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.qtd_ped {
+    color: white;
+    font-weight: bold;
+}
+
+.status {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.horas{
+    font-size: 12px;
+}
+
+.container_qtd_ped {
+    background-color: orange;
+    padding: 4px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_dir {
+    height: 88%;
+    width: 55%;
+    margin-top: 40px;
+}
+
+.texto_container_dir {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+}
+
+._ctn_botao_aprovar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao_aprovar {
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    font-weight: bolder;
+    width: 80%;
+    height: 50px;
+    font-size: 130%;
+    border: none;
+    cursor: pointer;
+    
+}
+
+button {
+    padding: 5px 0;
+    
+}
+
+
+.titulo {
+    margin-bottom: 15px;
+}
+
+.ped_description span{
+    font-weight: bold;
+    display: flex;
+}
+
+.ocorrenciaDiv {
+    display: none;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+}
+
+@media (max-width:767px) {
+
+    #container_geral {
+        display: block;
+    }
+
+    .logo-ifood {
+        display: none;
+    }
+
+    #container_esq {
+        margin-left: 100px;
+        height: 90%;
+    }
+
+    .card {
+        display: block;
+        width: 250px;
+        height: 150px;
+    }
+
+    .contagem button {
+        padding: 0;
+        font-size: 10px; /* Aumenta um pouco o tamanho da fonte */
+    }
+
+    .container_dir {
+        width: 300px;
+        position: fixed;   
+    }
+
+    .texto_container_dir,
+    .ocorrenciaDiv {
+        display: none;
+        position: fixed;
+        height: 70%;
+        overflow-y: scroll;
+        top: 25%;
+    }
+    
+    .ped_description span{
+        font-size: 16px;
+    }
+
+    .botao_aprovar {
+        height: 80px;
+    }
+
+    .card-area::-webkit-scrollbar-track {
+        background: transparent; /* Cor de fundo do trilho */
+        border-radius: 10px;
+        border: 1px solid white; /* Bordas arredondadas */
+    }
+}

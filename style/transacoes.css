@@ -14,6 +14,8 @@ body {
 
 .container {
   width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
 
 header {
@@ -21,7 +23,34 @@ header {
   padding-left: 15px;
   background-color: black;
   color: white;
+  
 }
+
+.saldo-atual {
+  background-color: #181818; /* Cor verde */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  height: 90px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.saldo-atual p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.saldo-atual span {
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+
 
 .operationBar ul li {
   background-color: #181818; 
@@ -55,6 +84,10 @@ header {
     .row {
       width: 100%;
     }  
+
+    .container {
+      display: block;
+    }
 
     .container button {
       margin-bottom: 5px;

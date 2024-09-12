@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Pedidos</title>
+  <style>
+    /* Estilos básicos para layout em colunas */
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    .left-column, .right-column {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    .pedido-item {
+      cursor: pointer;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .pedido-item:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Coluna Esquerda - Lista de Pedidos -->
+    <div class="left-column">
+      <h2>Pedidos</h2>
+      <div id="listaPedidos">
+        <!-- Os pedidos serão inseridos aqui dinamicamente via JS -->
+      </div>
+    </div>
+
+    <!-- Coluna Direita - Detalhes do Pedido -->
+    <div class="right-column">
+      <h2>Detalhes do Pedido</h2>
+      <div id="detalhesPedido">
+        <p>Selecione um pedido para ver os detalhes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JS -->
+  <script>
+    // Exemplo de dados de pedidos em JSON (simulação de uma API)
+    const pedidos = [
+      { id: 1, cliente: "João Silva", valor: "R$ 50,00", itens: ["Sorvete de Morango", "Açaí com Banana"] },
+      { id: 2, cliente: "Maria Souza", valor: "R$ 70,00", itens: ["Milkshake de Chocolate", "Sorvete de Baunilha"] },
+      { id: 3, cliente: "Pedro Lima", valor: "R$ 30,00", itens: ["Sorvete de Flocos"] }
+    ];
+
+    // Função para renderizar a lista de pedidos na coluna esquerda
+    function carregarListaPedidos() {
+      const listaPedidosElement = document.getElementById('listaPedidos');
+      listaPedidosElement.innerHTML = ''; // Limpa a lista antes de renderizar
+      pedidos.forEach(pedido => {
+        const pedidoElement = document.createElement('div');
+        pedidoElement.className = 'pedido-item';
+        pedidoElement.innerText = `Pedido #${pedido.id} - ${pedido.cliente}`;
+        pedidoElement.onclick = () => mostrarDetalhes(pedido);
+        listaPedidosElement.appendChild(pedidoElement);
+      });
+    }
+
+    // Função para mostrar os detalhes do pedido na coluna direita
+    function mostrarDetalhes(pedido) {
+      const detalhesPedidoElement = document.getElementById('detalhesPedido');
+      detalhesPedidoElement.innerHTML = `
+        <h3>Pedido #${pedido.id}</h3>
+        <p><strong>Cliente:</strong> ${pedido.cliente}</p>
+        <p><strong>Valor:</strong> ${pedido.valor}</p>
+        <p><strong>Itens:</strong></p>
+        <ul>
+          ${pedido.itens.map(item => `<li>${item}</li>`).join('')}
+        </ul>
+      `;
+    }
+
+    // Carrega a lista de pedidos ao carregar a página
+    window.onload = carregarListaPedidos;
+  </script>
+</body>
+</html>
