@@ -1,5 +1,41 @@
-$(document).ready(function() {
-    $('#cnpj').mask('00.000.000/0000-00');
-    $('#cpf').mask('000.000.000-00');
-    $('#telefone').mask('(00) 00000-0000');
+document.addEventListener('DOMContentLoaded', function() {
+    const cpfCnpjInput = document.getElementById('cpfCnpj');
+
+    cpfCnpjInput.addEventListener('input', function() {
+        let value = cpfCnpjInput.value.replace(/\D/g, ''); 
+
+        if (value.length > 14) {
+            value = value.substring(0, 14);  14 
+        }
+
+        if (value.length <= 11) {
+            
+            value = value.replace(/(\d{3})(\d)/, '$1.$2');
+            value = value.replace(/(\d{3})\.(\d{3})(\d)/, '$1.$2.$3');
+            value = value.replace(/(\d{3})\.(\d{3})\.(\d{3})(\d)/, '$1.$2.$3-$4');
+        } else {
+            
+            value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+            value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+            value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
+            value = value.replace(/(\d{4})(\d)/, '$1-$2');
+        }
+
+        cpfCnpjInput.value = value;
+    });
+
+    const telefoneInput = this.getElementById('telefone')
+
+    telefoneInput.addEventListener('input', function() {
+        let value = telefoneInput.value.replace(/\D/g, ''); 
+
+        if (value.length > 11) {
+            value = value.substring(0, 11);  11 
+        }
+
+        value = value.replace(/(\d{2})(\d)/, '($1) $2');
+        value = value.replace(/(\d{5})(\d)/, '$1-$2');
+        telefoneInput.value = value;
+
+    });
 });
