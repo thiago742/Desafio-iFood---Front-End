@@ -38,4 +38,17 @@ document.addEventListener('DOMContentLoaded', function() {
         telefoneInput.value = value;
 
     });
+
+    const inscEstd = this.getElementById('ie')
+
+    inscEstd.addEventListener('input', function() {
+        let value = inscEstd.value.replace(/\D/g, ''); 
+
+        if (value.length > 9) {
+            value = value.substring(0, 9);  9 
+        }
+
+        inscEstd.value = value;
+
+    });
 });

@@ -39,18 +39,18 @@ body {
 }
 
 .top-menu .menu-toggle {
-    display: none; /* O ícone de menu será visível sempre */
+    display: none; 
     padding-top: 10px;
     cursor: pointer;
 }
 
 .top-menu ul.expanded li {
-    display: block; /* Mostra os itens quando o menu está expandido */
+    display: block;
 }
 
 
 .top-menu ul.expanded li {
-    display: block; /* Mostra os itens quando o menu está expandido */
+    display: block;
 }
 
 h1 {
@@ -140,10 +140,10 @@ h1 {
 
 .filter-bar {
     padding: 10px;
-    background-color: #a00000;
+    background-color: #d02a2a;
     color: white;
     width: 100%;
-    position: relative; /* Importante para controlar o z-index */
+    position: relative; 
     z-index: 1;
 }
 
@@ -158,16 +158,16 @@ h1 {
 }
 
 .filter-items {
-    display: none; /* Itens de filtro escondidos por padrão */
+    display: none; 
     margin-top: 10px;
     padding-left: 10px;
-    position: absolute; /* Faz com que a lista apareça sobre outros elementos */
+    position: absolute; 
     background-color: rgba(160, 0, 0, 0.8);
-    color: white; /* Coloque um fundo para os itens não se sobreporem visualmente a outros elementos */
+    color: white;
     border: 1px solid #ddd;
-    z-index: 10; /* Garante que os itens da lista estejam no topo */
+    z-index: 10;
     width: 525px;
-    border-radius: 15px; /* Ajuste a largura da lista conforme necessário */
+    border-radius: 15px;
 }
 
 .filter-items ul {

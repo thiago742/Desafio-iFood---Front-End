@@ -53,9 +53,9 @@ body {
 }
 
 .scroll-container {
-    max-height: 180px; /* Defina a altura máxima do contêiner */
-    overflow-y: auto;  /* Permite o scroll vertical */
-    padding-right: 15px; /* Adiciona padding para evitar que o conteúdo seja oculto pelo scroll */
+    max-height: 180px; 
+    overflow-y: auto;  
+    padding-right: 15px; 
 }
 
 

@@ -1,10 +1,10 @@
 @import url('reset.css');
 
 .logo-ifood {
-    position: absolute; /* Fixa a logo na posição definida, independentemente do scroll */
-    top: 10px; /* Distância da logo para o topo da página */
-    right: 10px; /* Distância da logo para a direita da página */
-    width: 80px; /* Define uma largura para a logo (ajuste conforme necessário) */
-    height: auto; /* Mantém a proporção original da imagem */
-    z-index: 1000; /* Garante que a logo fique sobreposta a outros elementos */
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    width: 80px; 
+    height: auto; 
+    z-index: 1000;
 }
